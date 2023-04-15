@@ -719,13 +719,31 @@ body {
 .form-policy {
   margin-bottom: 24px;
 }
-.form-policy-check {
-}
-.form-polict-label {
+/* .form-policy-check{
+
+} */
+.form-policy-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  display: flex;
+  align-items: center;
+}
+.form-policy-label span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.form-policy-check:checked + .form-policy-label span {
+  background-color: var(--button-color);
+  fill: var(--section-color);
 }
 .policy-link {
   color: var(--logo-color);
