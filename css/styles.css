@@ -747,6 +747,7 @@ body {
 }
 .policy-link {
   color: var(--logo-color);
+  margin-left: 5px;
 }
 .form-button {
   font-family: 'Roboto', sans-serif;
