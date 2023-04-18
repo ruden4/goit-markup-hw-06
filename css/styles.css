@@ -625,6 +625,10 @@ body {
 }
 .footer-input::placeholder {
   color: var(--background-color);
+  font-weight: 400;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
 }
 .footer-submit {
   background-color: var(--logo-color);
