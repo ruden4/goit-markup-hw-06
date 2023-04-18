@@ -594,13 +594,9 @@ body {
 }
 /* .socials-link-icon {
 } */
-.form-footer {
-  display: flex;
-  flex-direction: column;
+.form-footer-container {
   margin-left: 80px;
-}
-.form-footer-wrap {
-  display: flex;
+  display: block;
 }
 .form-footer-title {
   font-weight: 500;
@@ -609,6 +605,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--background-color);
   margin-bottom: 16px;
+}
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 .footer-input {
   width: 264px;
@@ -624,7 +626,6 @@ body {
 /* .footer-input::placeholder {
 } */
 .footer-submit {
-  margin-left: 24px;
   background-color: var(--logo-color);
 
   border-radius: 4px;
