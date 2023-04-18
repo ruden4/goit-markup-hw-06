@@ -623,8 +623,9 @@ body {
   color: var(--background-color);
   padding: 8px 16px;
 }
-/* .footer-input::placeholder {
-} */
+.footer-input::placeholder {
+  color: var(--background-color);
+}
 .footer-submit {
   background-color: var(--logo-color);
 
