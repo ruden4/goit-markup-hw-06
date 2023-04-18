@@ -680,23 +680,28 @@ body {
   transition-duration: 550ms;
   transition-timing-function: ease-in;
   padding: 24px;
+  padding-top: 72px;
   margin-bottom: 0;
 }
 .overlay.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(180deg);
 }
 .close-button {
-  background: var(#e7e9fc);
+  background-color: var(#e7e9fc);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin-bottom: 32px;
+  
+  position: absolute;
+  top: 24px;
+  right: 24px;
 
-  display: block;
-  margin-left: auto;
-  justify-content: center;
-  align-items: center;
+  transition-property: fill, background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
-.close-button:active {
+.close-button:hover,
+.close-button:focus {
   fill: var(--background-color);
   background-color: var(--button-color);
   border-color: var(--button-color);
@@ -734,7 +739,7 @@ body {
   letter-spacing: 0.01em;
   color: var(--modal-color-text);
 }
-.imput-wrap {
+.input-wrap {
   position: relative;
 }
 .form-input {
@@ -787,7 +792,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--modal-color-text);
   display: flex;
   align-items: center;
 }
